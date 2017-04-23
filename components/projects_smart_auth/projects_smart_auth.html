@@ -1,0 +1,472 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        프로젝트 - smart_auth
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Projects - smart_auth
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        발단
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Prolog
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'korean'">
+        프로젝트 구성도
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'english'">
+        Project diagram
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'korean'">
+        사원증
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'english'">
+        Smart ID card
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'korean'">
+        구글 OTP
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'english'">
+        Google OTP
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'korean'">
+        동글인
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'english'">
+        Donglein
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'korean'">
+        크리덴셜 프로바이더
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'english'">
+        Credential provider
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 6" ng-class="{ 'red': location == 6 }" ng-show="lang_menu.lang == 'korean'">
+        설정 어플리케이션
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 6" ng-class="{ 'red': location == 6 }" ng-show="lang_menu.lang == 'english'">
+        Setting application
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 7" ng-class="{ 'red': location == 7 }" ng-show="lang_menu.lang == 'korean'">
+        보완점
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 7" ng-class="{ 'red': location == 7 }" ng-show="lang_menu.lang == 'english'">
+        Improvements
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            발단
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Prolog
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            PC를 사용하는 거의 대부분의 사람들은 윈도우 운영체제를 사용합니다.&nbsp;
+            이는 여러 회사에서도 마찬가지일 것입니다.&nbsp;
+            특히 회사에서는 윈도우 PC에 로그인할 때 어느정도 보안성이 필요하다고 생각합니다.<br>
+            <br>
+            그러나 윈도우 로그인 암호가 공유되거나 편의상의 이유로 매우 쉬운 암호로 설정하는 경우가 많습니다.&nbsp;
+            그래서 패스워드 이외에 윈도우에 로그인하는 다른 인증 방법이 필요하다고 생각했습니다.&nbsp;
+            그리고 간소한 인증 방법부터 번거롭지만 보안성이 높은 인증 방법까지 다양하게 필요하다고 생각했습니다.&nbsp;
+            간소한 인증 방법은 지식기반의 인증 방법이 아니라 소유기반의 인증 방법이 적절하다고 생각합니다.&nbsp;
+            지식기반의 인증 방법은 한번 공유되면 계속 공유되는 특징 때문에 보안성이 상당히 떨어지기 때문입니다.<br>
+            <br>
+            이렇게 되면 PC에서는 인증 방법은 간소화되면서 어느정도 보안성도 높힐 수 있습니다.&nbsp;
+            그러면서 서버 컴퓨터같이 보안이 중요한 컴퓨터는 다중인증을 통해 보안성을 매우 높힐 수 있습니다.<br>
+            <br>
+            smart_auth 프로젝트는 회사에서 사원들이 사용하는 것을 모델로 시작되었고 세 명이 힘을 모아 분업, 협업하면서 완성한 프로젝트입니다.<br>
+            <br>
+            <a style="color: #3498DB;" target="_blank" href="https://github.com/tbsl0rd0/smart_auth.git"><i class="fa fa-external-link"></i> smart_auth 깃허브</a>
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Almost everyone who uses a PC uses the Windows operating system.&nbsp;
+            This will be the same for many companies.&nbsp;
+            In particular in company, I think users need some security when logging in to a Windows PC.<br>
+            <br>
+            However, it is often the case that the Windows login password is shared or set to a very easy password for convenience.&nbsp;
+            So I thought it needs another authentication method to login to Windows in addition to the password.&nbsp;
+            And I thought it needs various ways from simple authentication method to cumbersome but highly secure authentication method.&nbsp;
+            I believe that a simple authentication method should be not a knowledge-based authentication method, but an ownership-based authentication method.&nbsp;
+            Knowledge-based authentication methods have the feature that once shared, continue to share that significantly reduce security.<br>
+            <br>
+            This simplifies the authentication method on the PC and can also increase the security to some extent.&nbsp;
+            However, security-conscious computers, such as server computers, can greatly enhance security through multiple authentication.<br>
+            <br>
+            The smart_auth project is a project that began as a model of what employees use in the company, and is a project that has been completed by three people working together as partisans and collaborators.<br>
+            <br>
+            <a style="color: #3498DB;" target="_blank" href="https://github.com/tbsl0rd0/smart_auth.git"><i class="fa fa-external-link"></i> smart_auth github</a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 150px;">
+            <img style="width: 150px;" src="images/smart_auth_logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            smart_auth의 인증 방법에는 패스워드, 사원증, 구글 OTP, 동글인 4가지이며 다음은 각 인증 방법을 활용하는 동영상입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            There are four authentication methods of smart_auth: password, Smart ID card, Google OTP, Donglein and here is a video that uses each authentication method.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <video style="width: 100%;" controls="controls">
+            <source src="videos/smart_auth_introduction.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 1">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            프로젝트 구성도
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Project diagram
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            다음은 smart_auth 프로젝트의 구성도입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The following is a diagram of the smart_auth project.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/smart_auth_diagram.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              smart_auth 구성도
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              smart_auth diagram
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            사원증
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Smart ID card
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            사원증이란 위의 구성도에서 Smart ID card를 의미합니다.&nbsp;
+            PC에 아두이노가 연결되어 있고 이 아두이노에 BLE 모듈이 마스터 모드로 주위의 BLE를 스캔하는 옵저버 역할을 합니다.&nbsp;
+            사원증 내에 삽입되어 있는 BLE는 슬레이브 모드로 작동하고 비콘의 역할을 수행합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The arduino is connected to the PC and the BLE module in this arduino acts as an observer in master mode to scan the surrounding BLE.&nbsp;
+            The BLE inserted in the Smart ID card operates in slave mode and acts as a beacon.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            구글 OTP
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Google OTP
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            구글 OTP는 구글에서 제공하는 시간기반의 OTP 클라이언트입니다.&nbsp;
+            이 구글 OTP 클라이언트와 연동시켜 윈도우 로그인에 OTP를 사용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Google OTP is a time-based OTP client provided by google.&nbsp;
+            It uses OTP for Windows login in conjunction with this Google OTP client.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            동글인
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Donglein
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            동글인은 동글과 로그인의 합성어로 새로이 만든 인증 방법입니다.&nbsp;
+            동글처럼 로그인한다고 해서 만들어진 이름입니다.&nbsp;
+            동글인에서 사용하는 동글은 일반 USB로서 MBR 영역에 인증키를 숨겨 안전하게 보관하는 방법을 사용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            A dongle is a combination of dongle and login.&nbsp;
+            It is a name created by logging in like a dongle.&nbsp;
+            The dongle used in the donglein is a generic USB and uses a method of safely keeping the authentication key in the MBR area.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            크리덴셜 프로바이더
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Credential provider
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            크리덴셜 프로바이더는 윈도우에서 사용하는 자격증명(크리덴셜)을 공급하기 위한 DLL입니다.&nbsp;
+            크리덴셜 프로바이더를 규격에 따라 제작하고 윈도우 레지스트리에 등록하면 윈도우 로그인 화면이 뜰 때 기본 크리덴셜 프로바이더를 대체하여 로드됩니다.&nbsp;
+            이 크리덴셜 프로바이더의 로직에 따라서 인증을 수행하고 윈도우에 로그인할 수 있게 합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            A credential provider is a DLL for supplying the credentials used by Windows.&nbsp;
+            Creating a credential provider and register it in the Windows registry, it will be loaded in place of the default credential provider when the Windows login screen appears.&nbsp;
+            Depending on the logic of this credential provider, it can perform authentication and login to Windows.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 2">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            사원증
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Smart ID card
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            PC에 아두이노가 연결되어 있고 이 아두이노에 BLE 모듈이 마스터 모드로 주위의 BLE를 스캔하는 옵저버 역할을 합니다.&nbsp;
+            사원증 내에 삽입되어 있는 BLE는 슬레이브 모드로 작동하고 비콘의 역할을 수행합니다.&nbsp;
+            아래는 PC에 연결된 아두이노의 모습입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The arduino is connected to the PC and the BLE module in this arduino acts as an observer in master mode to scan the surrounding BLE.&nbsp;
+            The BLE inserted in the Smart ID card operates in slave mode and acts as a beacon.&nbsp;
+            Below is a picture of Arduino connected to PC.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 300px;" ng-class="{ small: init.is_small == true }">
+            <img style="width: 300px;" src="images/arduino.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              PC에 연결된 아두이노
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              Arduino connected to PC
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            이 아두이노는 크리덴셜 프로바이더와 연결되어 근처에 사원증이 있는지 계속해서 체크합니다.&nbsp;
+            아래는 사원증의 프로토타입입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            This Aduino connects to the credential provider and continues to check for smart ID card.&nbsp;
+            Below is a prototype of an smart ID card.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 300px;" ng-class="{ small: init.is_small == true }">
+            <img style="width: 300px;" src="images/smart_id_card_front.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              사원증 프로토타입 앞모습
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              front of the smart ID card prototype
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 300px;" ng-class="{ small: init.is_small == true }">
+            <img style="width: 300px;" src="images/smart_id_card_back.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              사원증 프로토타입 뒷모습
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              back of the smart ID card prototype
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            사원증의 BLE는 수은전지와 간단한 스위치가 연결되어 있습니다.&nbsp;
+            BLE의 특성상 수은전지 만으로도 3년의 수명을 가집니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            smart ID card BLE is connected to a simple switch with a mercury battery.&nbsp;
+            Due to the nature of BLE, mercury batteries alone have a 3 year life.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 3">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            구글 OTP
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Google OTP
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 4">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            동글인
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Donglein
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 5">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            크리덴셜 프로바이더
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Credential provider
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 6">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            설정 어플리케이션
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Setting application
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 7">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            보완점
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Improvements
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>

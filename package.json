@@ -1,0 +1,30 @@
+{
+  "name": "james_kang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "=1.6.1",
+    "angular-animate": "=1.6.1",
+    "angular-route": "=1.6.2",
+    "css-loader": "=0.26.1",
+    "gulp": "=3.9.1",
+    "gulp-clean-css": "=2.3.2",
+    "gulp-concat": "=2.6.1",
+    "gulp-uglify": "=2.0.0",
+    "html-minify-loader": "=1.1.0",
+    "jquery": "=3.1.1",
+    "less": "=2.7.2",
+    "less-loader": "=2.2.3",
+    "normalize.css": "=5.0.0",
+    "raw-loader": "=0.5.1",
+    "style-loader": "=0.13.1",
+    "webpack": "=1.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

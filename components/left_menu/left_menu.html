@@ -1,0 +1,22 @@
+<div class="left_menu" ng-click="stop_propagation()" ng-class="{ active: left_menu.is_active == 1, 'small': init.is_small == true }">
+  <div ng-repeat="menu_item in menu_items" ng-class="{ active: menu_item.is_active == 1 }">
+    <div ng-click="menu_item.is_active = menu_item.is_active * -1; inactivate_other_menus($index)">
+      <div ng-show="lang_menu.lang == 'korean'">
+        {{ menu_item.korean_title }}
+      </div>
+      <div ng-show="lang_menu.lang == 'english'">
+        {{ menu_item.english_title }}
+      </div>
+    </div>
+    <div>
+      <a ng-href="{{ '#!' + sub_item.url }}" ng-repeat="sub_item in menu_item.sub_items">
+        <div ng-show="lang_menu.lang == 'korean'">
+          {{ sub_item.korean_title }}
+        </div>
+        <div ng-show="lang_menu.lang == 'english'">
+          {{ sub_item.english_title }}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

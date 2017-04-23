@@ -1,0 +1,1469 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        프로젝트 - overmatch
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Projects - overmatch
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        발단
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Prolog
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'korean'">
+        뷰 디자인
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'english'">
+        View design
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'korean'">
+        기능
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'english'">
+        Functions
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'korean'">
+        앱 구조
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'english'">
+        App archi
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'korean'">
+        AWS 구조
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'english'">
+        AWS archi
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'korean'">
+        홍보
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'english'">
+        Advertisement
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 6" ng-class="{ 'red': location == 6 }" ng-show="lang_menu.lang == 'korean'">
+        보완점
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 6" ng-class="{ 'red': location == 6 }" ng-show="lang_menu.lang == 'english'">
+        Improvements
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 7" ng-class="{ 'red': location == 7 }" ng-show="lang_menu.lang == 'korean'">
+        트러블 이슈
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 7" ng-class="{ 'red': location == 7 }" ng-show="lang_menu.lang == 'english'">
+        Trouble issues
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            발단
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Prolog
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            블리자드사의 오버워치가 출시된 이후로 한국에서 어느정도 인기를 얻었습니다.&nbsp;
+            오버워치는 팀 단위로 하는 게임이기 때문에 불특정 다수를 대상으로 오랫동안 호흡을 맞춰 플레이할 팀을 모집하는 시스템이 필요하다고 생각했습니다.&nbsp;
+            오버워치 인벤에 이러한 시스템이 존재했지만 게시판 형태로 존재했기 때문에 불편해 보였습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Since blizzard's overwatch was released, it has gained some popularity in korea.&nbsp;
+            Overwatch is a team-based game, so it needs a system that recruited a team for cooperating each other for a long time.&nbsp;
+            The system exgists in overwatch inven, but it looks uncomportable because it exists in the form of a bulletin board.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 320px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 320px;" src="images/overwatch_inven_party_recruitment_bulletin_board.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버워치 인벤 파티모집 게시판
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overwatch inven party recruitment board
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            좀더 편리하게 팀을 찾을 수 있도록 하기위해 오버매치라는 파티매칭 프로젝트를 시작하게 되었습니다.<br>
+            <br>
+            <a style="color: #3498DB;" target="_blank" href="http://overmatch.co.kr"><i class="fa fa-external-link"></i> 오버매치 (overmatch.co.kr)</a><br>
+            <a style="color: #3498DB;" target="_blank" href="https://github.com/tbsl0rd0/overmatch.git"><i class="fa fa-external-link"></i> 오버매치 깃허브</a><br>
+            <br>
+            오버매치는 다음과 같은 특징을 가집니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            So I started this overwatch party recruitment project, overmatch, for more comportable system.<br>
+            <br>
+            <a style="color: #3498DB;" target="_blank" href="http://overmatch.co.kr"><i class="fa fa-external-link"></i> overmatch (overmatch.co.kr)</a><br>
+            <a style="color: #3498DB;" target="_blank" href="https://github.com/tbsl0rd0/overmatch.git"><i class="fa fa-external-link"></i> overmatch github</a><br>
+            <br>
+            Overmatch has the following characteristics.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            - 회원가입 필요없이 배틀넷 계정으로 로그인합니다. (OAuth 2.0 프로토콜)<br>
+            - 배틀태그를 클릭하면 여러가지 편리한 기능을 이용할 수 있는 컨텍스트 메뉴가 뜹니다.<br>
+            - 배틀태그와 함께 전적을 항상 표시함으로서 해당 유저의 성향을 쉽게 파악할 수 있습니다.<br>
+            - 공개채팅, 구직란, 파티매칭 등에 웹소켓을 사용하여 실시간 데이터 통신이 가능하게 합니다.
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            - Users login with battlenet account without signing up.<br>
+            - Clicking a battletag brings up a context menu where users can use variable useful functions.<br>
+            - Users can easily identify the other's stat by always showing the stat aside the battletag.<br>
+            - It enables real-time data communication by using websocket for public chat, job search, and party matching.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            프로젝트 목적과는 별도로 이 프로젝트는 혼자서 웹앱을 기획, 제작, 홍보, 운영해보고 실력을 다지는 목적도 어느정도 있습니다.&nbsp;
+            특히, 짜임새 높은 MEAN 스택 SPA 앱을 제작하는데 의의를 두었습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Apart from the purpose of the project, the project's private purpose is planning, producing, promotion and operating web apps on my own and to improve my skills.&nbsp;
+            Especially, I put an important point on making high-structural MEAN stack SPA app.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 1">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            뷰 디자인
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            View design
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            창의적인 디자인에 대해서는 자신이 없습니다.&nbsp;
+            하지만 특정 디자인 요소를 보고 영감을 얻어서 벤치마킹이나 모방은 할 수 있습니다.&nbsp;
+            오버매치는 실제 오버워치 게임 내에서의 디자인 요소로부터 영감을 얻어 디자인했습니다.<br>
+            <br>
+            뷰 디자인을 할 때 이미지로 하기 보다는 최대한 순수 CSS로 디자인합니다.&nbsp;
+            active 등의 클래스를 동적으로 추가할 필요가 있을 때는 자바스크립트를 이용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I am not confident about creative designing.&nbsp;
+            But I can benchmark or mimic certain design elements by getting inspired from others.&nbsp;
+            Overmatch was designed from the actual overwatch game.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            탑 메뉴
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Top menu
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            탑 메뉴는 오버워치 게임 내의 메뉴 디자인을 보고 만들었습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The top menu was created from the menu design within the overwatch game.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 320px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 320px;" src="images/overwatch_menu.gif">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버워치 메뉴
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overwatch menu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 320px; margin-top: 30px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 320px;" src="images/overmatch_top_menu.gif">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버매치 탑 메뉴
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overmatch top menu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            유저 정보
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            User information
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            유저 정보도 마찬가지로 게임 내의 유저 정보에서 영감을 받아 만들었습니다.&nbsp;
+            가장 많이 플레이한 영웅 3개를 표시한 것과 레벨, 경쟁 티어, 초상화 등은 오버워치 공식 홈페이지에서 파싱해온 정보입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            User information was also made from the user information design of the overwatch game.&nbsp;
+            The 3 most played heros and level, rank tier, portrait are parsed data from overwatch official website.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 320px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 320px;" src="images/overwatch_user_information.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버워치 유저 정보
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overwatch user information
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 320px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 320px;" src="images/overmatch_user_information.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버매치 유저 정보
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overmatch user information
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            모달
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Modal
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/overwatch_modal.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버워치 모달
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overwatch modal
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/overmatch_modal.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버매치 모달
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overmatch modal
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            경고
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Alert
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 300px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 300px;" src="images/overwatch_alert.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버워치 경고
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overwatch alert
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 300px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 300px;" src="images/overmatch_alert.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              오버매치 경고
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              overmatch alert
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 2">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            기능
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Functions
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            배틀넷 계정을 이용한 로그인
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Login using the battlenet account
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            OAuth 2.0 표준 프로토콜 사용하는 passport.js를 이용해서 배틀넷 계정으로 로그인하는 시스템을 구현했습니다.&nbsp;
+            아직 배틀넷 API가 오버워치 쪽은 구현이 되어있지 않아 배틀태그만 얻어올 수 있습니다.&nbsp;
+            현재 전적이나 레벨, 랭크 티어 등은 오버워치 공식 사이트를 파싱해서 가져오고 있습니다.&nbsp;
+            배틀넷 API에서 오버워치를 정식으로 지원하면 파싱할 필요 없이 API로 가져올 수 있기를 기대합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I have implemented a system that users login using battlenet account using passport.js, which uses the OAuth 2.0 standard protocol.&nbsp;
+            The battlenet API is not yet implemented on overwatch, so the overmatch can only get the battletag.&nbsp;
+            Currently, level, rank tiers, etc are parsed from the overwatch official site.&nbsp;
+            If the battlenet API supports overwatch, I expect to be able to fetch them with the API without having to parse them.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            공개채팅
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Public chat
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            공개채팅은 자유로운 주제로 대화를 나누는 곳입니다.<br>
+            <br>
+            공개채팅은 기본적으로 웹소캣을 이용하여 구현했습니다.&nbsp;
+            공개채팅 탭에 있는 동안 채널에 가입이 되고 다른 탭에 있는 동안 채널에서 떠나므로 공개채팅 탭에 있는 유저들에게만 채팅 정보를 브로드캐스팅합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Public chat is where users talks with a free conversation topic.<br>
+            <br>
+            Public chat is basically implemented using web sockets.&nbsp;
+            Because a user is subscribing when is in the public chat tab, a user is unsubscribing when is in the other tab, the chat information only broadcasts to the user in public chat tab.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            구직란
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Job search board
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            파티에 들어가고자 하는 유저들이 구직란을 통해 자신을 어필할 수 있는 곳입니다.&nbsp;
+            코멘트와 포지션, 마이크 사용 여부 등을 입력하고 포스팅을 하면 다른 유저들이 이 포스팅을 볼 수 있고 오버워치 게임 내에서 직접 친구 추가를 하거나 파티매칭에서 방을 만들고 초대를 할 수 있습니다.<br>
+            <br>
+            구직란도 웹소켓을 통하여 데이터가 실시간으로 동기화되도록 했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The job search board is a place where users who want to enter a party can appeal themselves&nbsp;
+            Entering Comments, positions and whether you use a microphone, and posting, other users can see this post and then add friends directly within the overwatch, or create a room in the party matching room board and invite them.<br>
+            <br>
+            Job search board also let the data be synchronized in real time through the websocket.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            파티매칭
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Party matching room board
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            채팅방 형식으로 파티를 모집할 수 있는 곳입니다.&nbsp;
+            부가적으로 방장임명, 강퇴 기능이 있습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            This is where you can recruit parties in the chat room format.&nbsp;
+            In addition, there is a function of appointment party matching room owner and forcing out the other user.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            동영상 게시판
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Videos board
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            동영상 URL을 등록하고 기호에 맞는 동영상을 여러 유저들과 공유하며 댓글로 소통할 수 있는 곳입니다.<br>
+            <br>
+            다른 동영상 게시판과 차별을 두기 위해서 다음과 같은 기능을 두었습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            It is a place where you can register video URLs, share the videos that match preferences with various users, and communicate with comments.<br>
+            <br>
+            In order to differentiate it from other videos boards, it has the following special functions.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            - 동영상 포스트에 타이틀과 가깝게 베스트 댓글을 표시합니다<br>
+            - 동영상의 +1/-1이나 댓글의 +1/-1은 실시간으로 동기화됩니다.<br>
+            - 댓글 자체도 마치 채팅을 하는 것처럼 실시간으로 동기화됩니다.
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            - Show best comments close to titles in video posts<br>
+            - Video + 1 / -1 or comment + 1 / -1 is synced in real time.<br>
+            - The comments themselves are synced in real time as if they were chatting.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            현재 동영상 게시판 활성화를 위해서 자동으로 10분에 한번씩 다른 커뮤니티 사이트에서 게시물을 파싱하여 등록하도록 하였습니다.&nbsp;
+            코드 관리와 운영 비용 절감을 위해서 AWS lambda를 이용하여 스케줄링했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Currently, to activate the videos board, it automatically registers the posting every 10 minutes by parsing other community site.&nbsp;
+            I used AWS lambda to schedule this to manage its code and cut down the operating costs.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 3">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            앱 구조
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            App architecture
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" style="margin-top: 10px;" ng-show="lang_menu.lang == 'korean'">
+            오버매치는 기본적으로 MEAN 스택으로 구성되어 있습니다.
+          </div>
+          <div class="paragraph" style="margin-top: 10px;" ng-show="lang_menu.lang == 'english'">
+            Overmatch is basically composed of MEAN stack.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            앵귤러를 이용한 컴포넌트 단위 개발
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Component-based app developement using angular
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            웹의 요소를 컴포넌트 단위로 나누고 컴포넌트 내에서도 템플릿(HTML), 컨트롤러(javascript), Less(CSS)로 나누어서 뷰와 컨트롤러와 디자인을 나누었습니다.<br>
+            아래는 footer 컴포넌트의 예입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I divided web elements into component units and divide them into template(HTML), controller(javascript), and Less(CSS) to devide views and controllers and design.<br>
+            Below is an example of a footer component.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote">
+            <i class="fa fa-folder-open-o"></i> footer<br>
+            &nbsp;&nbsp;- footer.html<br>
+            &nbsp;&nbsp;- footer.js<br>
+            &nbsp;&nbsp;- footer.less
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            이렇게 나누어진 뷰와 디자인 그리고 비지니스 로직은 협업에 매우 유리하고 관리하기가 편합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            This divided view, design and business logic is very easy to collaborate and manage.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            웹팩을 이용한 컴포넌트 번들화
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Component bundling with webpack
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            웹팩의 로더를 통해서 위의 컴포넌트 구조의 js 파일에서 html 파일을 스트링으로 읽어서 템플릿으로 지정하고 less 파일을 컴파일하여 css로 지정합니다.&nbsp;
+            이렇게 1차적으로 번들화된 컴포넌트 파일을 묶어 최종적인 번들 파일을 만들어 냅니다.<br>
+            <br>
+            --watch 옵션을 통해 이런 일련의 작업들은 코드가 변경될 때마다 자동으로 실행됩니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Through the webpack loader, it reads the html file as a string and designate it as a template, and compile the less file and load it into css from the js file of the component structure above.&nbsp;
+            These primary bundled component files are bundled together to produce the final bundle file.<br>
+            <br>
+            With the --watch option, this set of tasks is automatically executed whenever the code changes.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            걸프를 이용한 번들 파일과 라이브러리의 통합
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Integration of bundle files and libraries using gulf
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            걸프는 웹팩을 통해서 만들어진 번들 파일과 필요한 라이브러리들을 한데 묶어 minify를 하고 하나의 파일로 통합합니다.&nbsp;
+            최종적으로 자바스크립트와 관련된 파일은 js.min.js로, CSS와 관련된 파일은 css.min.css로 만들어집니다.&nbsp;
+            이렇게 하나의 파일로 통합했을 때는 요청을 여러번 하는 대신 하나의 파일만 요청하게 하므로서 과부하를 막을 수 있고 관리의 편의성이 있습니다.<br>
+            <br>
+            걸프도 마찬가지로 코드가 변경될 때마다 watch 태스크를 통해서 자동으로 실행됩니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Gulf bundles bundle file made with webpack and necessary libraries, minifies and integrates it into one file.&nbsp;
+            Finally, the javascript-related files are created as js.min.js, and the CSS-related files are created as css.min.css.&nbsp;
+            When combined into a single file, it can prevent overloading by making only one file to be requested instead of multiple requests.<br>
+            <br>
+            The gulf also runs automatically through the watch task whenever the code changes.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            배치 파일을 통한 개발 툴 일괄 실행
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Batch execution of developing tools through batch file
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            개발을 시작하기에 앞서 실행할 툴들이 많습니다.&nbsp;
+            웹팩, 걸프, 서버 데몬(supervisor), 텍스트 편집기(아톰), 몽고DB 데몬이 있습니다.&nbsp;
+            이러한 툴들을 일괄적으로 실행하기 위해 배치 파일을 씁니다.&nbsp;
+            다음은 오버매치의 툴 일괄 실행 배치 파일입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            There are some tools to run before you start developing.&nbsp;
+            Those are webpack, gulf, server daemon(supervisor), text editor(atom), and mongodb daemon.&nbsp;
+            I use a batch file to run these tools in batches.&nbsp;
+            The following is an overmatch tool batch execution batch file.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              Batch
+            </div>
+            <div>
+              <pre>
+start webpack --watch
+start gulp
+start supervisor bin/www
+start atom .
+"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 4">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            AWS 구조
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            AWS architecture
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            AWS 구조는 아래 다이어그램과 같습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The AWS structure is shown in the diagram below.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/aws_diagram.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              AWS 구조 다이어그램
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              AWS architecture diagram
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            오토 스케일링
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Auto scaling
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            많은 사용자를 대비해서 로드 밸런서와 오토 스케일링을 구성하였습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Load balancer and auto scaling are configured for many users.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            레디스
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Redis
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            로드 밸런서와 오토 스케일링으로 인해 여러개가 생길 EC2의 웹소켓을 하나의 풀에 담고 빠른 응답을 하기 위해 레디스를 사용했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Redis is used to put EC2's web sockets that load balancer and auto scaling creates into single pool and to respond quickly.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            로드 밸런서의 스티키 세션
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Sticky session of the load balancer
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            로드 밸런서 환경에서 웹소켓을 사용하기 위해 로드 밸런서에 스티키 세션을 설정했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I set up a sticky session on the load balancer to use a websocket in a load balancer environment.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            리소스 서브를 위한 S3
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            S3 for serving the resouce
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            이미지나 js.min.js와 css.min.css는 EC2에서 직접 서브하지 않습니다.&nbsp;
+            S3가 과부하 문제도 적고 속도가 더 빠르기 때문에 서버 코드를 제외한 리소스는 S3에서 제공하는게 여러 면에서 유리합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Images or js.min.js and css.min.css are not served directly from EC2.&nbsp;
+            Because S3 is less overloaded and has a faster speed, resources other than server code are more advantageous in S3.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            user_data의 활용
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Using user_data
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            EC2의 인스턴스가 생성될 때 제일 처음 실행되는 쉘 코드가 user_data입니다.&nbsp;
+            EC2에 직접 접속하여 실행 환경을 만들고 코드를 배포하는 방법 대신에 user_data를 통해서 실행 환경을 설정하고 코드를 배포하는 방법을 선택했습니다.&nbsp;
+            AMI를 따로 만들어 둘 필요가 없고 웹이 업데이트 되었을 때 새로운 버전의 코드를 배포하기가 편리하기 때문입니다.<br>
+            <br>
+            다음은 오버매치의 user_data입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The first shell code that runs when an instance of EC2 is created is user_data.&nbsp;
+            Instead of connecting directly to EC2 to create a runtime environment and deploying the code, I chose user_data to do them.&nbsp;
+            This is because it is not necessary to create AMI and it is convenient to distribute the new version of the code when the web is updated.<br>
+            <br>
+            Here is an overmatch user_data.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              Bash
+            </div>
+            <div>
+              <pre>
+#!/bin/bash
+
+cd /home/ec2-user
+
+wget https://nodejs.org/dist/v6.9.4/node-v6.9.4-linux-x64.tar.xz
+tar xf node-v6.9.4-linux-x64.tar.xz
+rm node-v6.9.4-linux-x64.tar.xz
+mv node-v6.9.4-linux-x64 node
+
+export PATH=$PATH:/home/ec2-user/node/bin
+export NODE_ENV=production
+
+yum update -y
+
+yum install -y git
+yum install -y awslogs
+
+npm install -g forever
+
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
+service iptables save
+
+git clone https://github.com/tbsl0rd0/overmatch.git
+cd overmatch
+npm install
+
+forever start bin/www
+
+sed -i 4s/.*/'region = ap-northeast-2'/ /etc/awslogs/awscli.conf
+
+sed -i 121,127d /etc/awslogs/awslogs.conf
+
+echo [forever_logs] >> /etc/awslogs/awslogs.conf
+echo log_group_name = overmatch >> /etc/awslogs/awslogs.conf
+echo log_stream_name = forever_logs >> /etc/awslogs/awslogs.conf
+echo file = /root/.forever/*.log >> /etc/awslogs/awslogs.conf
+
+service awslogs start
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            먼저 실행 환경에 필요한 프로그램을 다운로드하고 설치하며 환경변수를 설정합니다.&nbsp;
+            아이피테이블을 이용하여 TCP 80번 포트를 TPC 3000번 포트로 리다이렉트합니다.&nbsp;
+            그리고 깃허브에서 서버 코드를 클론하고 노드 모듈을 설치합니다.&nbsp;
+            그 다음 포에버로 서버를 실행하고 AWS cloudwatch logs에 포에버 로그를 전송하기 위한 파일 설정을 합니다.&nbsp;
+            끝으로 awslogs 서비스를 실행하고 서버를 구동시킬 모든 준비를 마칩니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            First, download and install the necessary programs for the runtime environment, and set environment variables.&nbsp;
+            TCP port 80 is redirected to TPC 3000 port using iptables.&nbsp;
+            Then clone the server code from the github and install the node modules.&nbsp;
+            Then run the server with forever and set up the file to send the forever logs to AWS cloudwatch logs.&nbsp;
+            Finally, ready to run the awslogs service and start running the server.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            서버 관제를 위한 클라우드왓치
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Cloudwatch for watching the server
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            서버에서 생기는 부하 문제나 에러 로그를 보기위해 클라우드왓치를 구성했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I configured the cloudwatch to view the load problems or error logs on the server.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/cloudwatch_dashboard.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              클라우드왓치 대쉬보드
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              cloudwatch dashboard
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/cloudwatch_logs.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              클라우드왓치 로그
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              cloudwatch logs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            서버 노드 인스턴스는 포에버에 의해서 관리됩니다.&nbsp;
+            클라우드왓치 로그에서는 포에버에서 발생한 로그를 표시하도록 설정했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Server node instance is managed by forever.&nbsp;
+            The cloudwatch logs is set to display logs from forever.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 5">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            홍보
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Advertisement
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            홍보는 아프리카티비 오버워치 BJ인 이펙트님을 통해서 배너 광고를 했습니다.<br>
+            <br>
+            이에 더하여 구글 애드워즈를 이용하여 하루 노출수 2500회 정도를 진행했습니다.&nbsp;
+            애드워즈 2500회 노출에 클릭은 약 30회입니다.&nbsp;
+            홍보에 많은 돈을 투자하기에는 현실적으로 어려움이 있기 때문에 과한 홍보는 할 수 없었습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I advertised banner advertisement through africatv overwatch bj effect.<br>
+            <br>
+            In addition, I used google adWords to run around 2500 exposures per day.&nbsp;
+            AdWords has about 30 clicks on 2500 exposures.&nbsp;
+            There was a difficulty in investing a lot of money in advertisement, so I could not overdo.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 200px;">
+            <img style="width: 200px;" src="images/afreecatv_advertisement_small.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              아프리카티비 작은 광고
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              Afreecatv small advertisement
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 100%;">
+            <img style="width: 100%;" src="images/afreecatv_advertisement_big.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              아프리카티비 큰 광고
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              Afreecatv big advertisement
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 450px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 450px;" src="images/adwords_advertisement.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              애드워즈 광고
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              Adwords advertisement
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 6">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            보완점
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Improvements
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            모바일 대응
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Mobile correspondence
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            아직 모바일에 대응하지는 못합니다.&nbsp;
+            오버매치는 처음에 피씨에서 접속하는 것으로 계획했지만 구글 웹로그 분석을 통해서 잠재 고객을 분석한 결과 모바일로 접속하는 유저가 약 30% 정도 되었습니다.&nbsp;
+            그래서 모바일에 대응할 필요성이 생겼고 차후에 반응형 웹으로 수정할 계획입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            It is not yet mobile-friendly.&nbsp;
+            The overmatch was originally planned to be accessed from PC, but by analyzing potential customers through google analytics, about 30% of users were accessing mobile.&nbsp;
+            So it has a need to respond to mobile, and I plan to modify it to a responsive web in the future.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            더 많은 유저 확보
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Gaining more users
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            오버매치는 유저가 많으면 많을수록 그 기능을 잘 발휘합니다.&nbsp;
+            그러나 현재 이용 유저는 그리 많치가 않습니다.&nbsp;
+            더 많은 유저 확보는 오버매치가 제기능을 발휘할 필요조건입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The more overmatch has users, the better the function will be.&nbsp;
+            However, now there are not so many users.&nbsp;
+            Getting more users is a requirement for overmatch to work.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            앵귤러2의 필요성
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Need for angular2
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            다음과 같은 이유로 앵귤러2의 필요성이 있습니다.&nbsp;
+            그러나 당장 앵귤러2로 바꿔야할 절대적인 필요성은 아닙니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            There is a need for angular2 for the following reasons.&nbsp;
+            But it is not an absolute necessity to change to Angular2 right now.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            - 클라이언트측 렌더링이 아닌 서버측 렌더링 (속도 향상)<br>
+            - 양방향 바인딩이 아닌 단방향 바인딩 (속도 향상)<br>
+            - ES6, 7을 사용하기 위해 정식으로 지원하는 타입스크립트 (개발/협업 편의)
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            - Server-side rendering, not client-side rendering (speeding up)<br>
+            - One-way binding, not bidirectional binding (speeding up)<br>
+            - Typescript formally supported to use ES6, 7 (development / collaboration convenience)
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            레스트 API
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            RESTful API
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            결과적으로 오버매치에는 레스트 API를 적용하는데 실패했습니다.&nbsp;
+            단순히 자원을 CRUD하는 환경이라면 쉽게 적용할 수 있지만 오버매치는 적용하기가 까다롭게 느껴졌습니다.&nbsp;
+            하나의 자원에 대해서 업데이트하는 경우가 다양하고 이 업데이트 하나하나에 구체적인 이름을 정하고 싶은데 레스트 API는 이런 점에서 불편한 느낌이 많았습니다.&nbsp;
+            좀더 레스트 API에 대해서 깊게 공부하고 자원을 다루는 방법을 많이 익힌 후에 적용해 볼 생각입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            As a result, I failed to apply the RESTful API to the overmatch.&nbsp;
+            It can easily be applied to an environment that simply CRUD the resources, but the overmatch has been harder to apply.&nbsp;
+            There are a lot of cases where a resource is updated, and I would like to give a specific name to each one of these updates, but the RESTful API was inconvenient in this regard.&nbsp;
+            I will learn a lot more about the RESTful API and how to deal with resources before I apply it.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 7">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            트러블 이슈
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Trouble issues
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            텍스트 인풋 태그의 앵귤러 모델
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Angular model in text input tag
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            다음과 같은 코드는 IE에서 문제를 일으킵니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The following code causes a problem in IE.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              HTML
+            </div>
+            <div>
+              <pre>
+&lt;<span style="color: #C70C00;">input</span> <span style="color: #ED8C2B;">type</span>="text" <span style="color: #ED8C2B;">ng-model</span>="message"&gt;
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            텍스트 인풋 태그의 값을 $scope.message로 처리를 하는 과정에서 일부 뒷부분의 텍스트가 누락되는 현상이 발견됩니다.&nbsp;
+            텍스트가 특정 단어로 끝날 때만 이런 현상이 일어나며 유니코드일 때만 해당되는 것 같습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            As angular process the value of the text input tag with $scope.message, the phenomenon that some text is partly missing occurs.&nbsp;
+            This only happens when the text ends with a certain word, and it only seems to be unicode.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 450px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 450px;" src="images/iufs13qq.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              'gx5u3s8m#3373야' 입력
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              typing 'gx5u3s8m#3373야'
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image full_width_in_small" style="width: 450px;" ng-class="{ 'small': init.is_small }">
+            <img style="width: 450px;" src="images/imms33zc.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              'gx5u3s8m#3373' 출력
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              printing 'gx5u3s8m#3373'
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            이 문제는 jqlite를 사용하여 아래와 같이 해결합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            This problem is solved using jqlite as follow.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              HTML
+            </div>
+            <div>
+              <pre>
+&lt;<span style="color: #C70C00;">input</span> <span style="color: #ED8C2B;">id</span>="public_chat_message" <span style="color: #ED8C2B;">type</span>="text"&gt;
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+{
+  ...
+  message: <span style="color: #3498DB;">$</span>('#public_chat_message').<span style="color: #3498DB;">val</span>(),
+  ...
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            몽고DB의 _id의 문제
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            The problem of the _id of the mongodb
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            몽고DB의 _id는 몽고 DB에서 자동으로 생성하는 식별 아이디로 오브젝트로 저장됩니다.&nbsp;
+            이 _id가 에이잭스를 통해서 클라이언트로 전달될 때는 문제가 생기지 않지만 웹소켓을 통해서 전달될 때는 문제가 생깁니다.&nbsp;
+            개발환경인 윈도우에서는 별다른 문제가 생기지 않았지만 운영환경인 리눅스에서는 이 _id가 웹소켓으로 전달될 때 문자열로 변형되지 않고 오브젝트 그대로 전달되는 현상이 발생했습니다.&nbsp;
+            이 문제는 uuid 라이브러리를 통해서 _id 대신에 따로 부여하 uuid를 사용함으로서 해결했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The _id of mongodb is stored as an object with the ID that is automatically generated from mongodb.&nbsp;
+            There is no problem when this _id is passed to the client via ajax, but it will be a problem when passed through the websocket.&nbsp;
+            On windows, which is a development environment, there was no problem, but in linux, which is an production environment, when this _id was passed to a websocket, it was transferred as an object instead of being transformed into a string.&nbsp;
+            This problem was solved by using the uuid library to give uuid instead of _id.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            로드 밸런싱 환경에서의 웹소켓
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            websocket in a load balanced environment
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            로드 밸런싱 환경에서는 서버가 분산되어 있기 때문에 웹소켓으로 접속한 모든 클라이언트를 하나의 풀에 담기 위해서는 다음과 같이 몇가지 설정해야되는 사항이 있었습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            In a load balanced environment, because the servers are distributed, there are a few things as followings that need to be done in order to put all the clients connected to the websocket into one pool.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            1. 웹소켓을 레디스 캐쉬 디비에 연결합니다.<br>
+            2. 로드 밸런서에서 스티키 세션을 설정합니다.<br>
+            3. 엔진엑스를 이용한 노드 클러스터 환경을 만들지 못합니다.
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            1. Connect the websocket to the redis cash database.<br>
+            2. Set up a sticky session in the load balancer.<br>
+            3. can not create a node cluster environment using nginx.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="header_3" ng-show="lang_menu.lang == 'korean'">
+            IE에서 $http 모듈의 캐쉬 문제
+          </div>
+          <div class="header_3" ng-show="lang_menu.lang == 'english'">
+            Cash problem of the $http module in IE
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            처음 오버매치 웹사이트 접속하게 되면 세션을 얻어오는 에이잭스를 수행합니다.&nbsp;
+            이 에이잭스는 앵귤러의 $http 모듈을 주입해서 수행합니다.&nbsp;
+            그러나 이 $http 모듈의 기본 설정으로 캐쉬를 하게 되어 있습니다.&nbsp;
+            문제는 크롬에서는 상태 코드 200으로 세션을 잘 얻어오는 모습을 보였지만 IE에서는 상태 코드 302로 캐쉬된 세션을 사용하는 현상이 나타났습니다.&nbsp;
+            그렇기 때문에 IE에서는 처음 접속할 때 세션을 얻어오지 못하고 새로고침을 했을 때 얻어오는 현상이 일어났습니다.&nbsp;
+            그래서 다음과 같이 $http 모듈의 기본 설정에서 캐쉬를 사용하지 않도록 했습니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The first time an user connects to the overmatch website, Ajax gets the session.&nbsp;
+            This Ajax is accomplished by injecting the angular $http module.&nbsp;
+            However, the default setting for this $http module is to cache.&nbsp;
+            The problem was that Chrome was getting a good session with a status code of 200, but in IE it was using a cached session with status code 302.&nbsp;
+            Therefore, when an user first connected in IE, it could not get a session and get it when the user refreshes it.&nbsp;
+            So I decided not to use the cache in the default setting of $http module as follows.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+angular.module('init', [])
+.component('init', {
+  controller: function() {}
+})
+.config(function($httpProvider) {
+  $httpProvider.defaults.headers.common = {
+    pragma: 'no-cache'
+  };
+});
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>

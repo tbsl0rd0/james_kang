@@ -1,0 +1,534 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        철학 - 웹앱 아키텍쳐
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Philosophy - Web application architecture
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        컴포넌트
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Component
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }">
+        OOCSS
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'korean'">
+        레스트 API
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'english'">
+        RESTful API
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'korean'">
+        웹팩
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'english'">
+        Webpack
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'korean'">
+        걸프
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'english'">
+        Gulp
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            컴포넌트
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Component
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            웹의 요소를 컴포넌트 단위로 나누고 컴포넌트 내에서도 템플릿(HTML), 컨트롤러(javascript), Less(CSS)로 나누어서 뷰와 컨트롤러와 디자인을 나눕니다.<br>
+            아래는 footer 컴포넌트의 예입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I divide web elements into component units and divide them into template(HTML), controller(javascript), and Less(CSS) to devide views and controllers and design.<br>
+            Below is an example of a footer component.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote">
+            <i class="fa fa-folder-open-o"></i> footer<br>
+            &nbsp;&nbsp;- footer.html<br>
+            &nbsp;&nbsp;- footer.js<br>
+            &nbsp;&nbsp;- footer.less
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            이렇게 나누어진 뷰와 디자인 그리고 비지니스 로직은 협업에 매우 유리하고 관리하기가 편합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            This divided view, design and business logic is very easy to collaborate and manage.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 1">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2">
+            OOCSS
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            CSS가 HTML의 구조에 따라서 CSS도 구조적으로 작성될 필요가 있다고 생각합니다.&nbsp;
+            템플릿(HTML)을 하나의 객체로 생각하고 이 객체 구조를 그대로 표현하여 CSS를 작성하는 것입니다.&nbsp;
+            이렇게 작성하기 위해서 Less의 도움을 받습니다.&nbsp;
+            다음은 context_menu 컴포넌트에서 OOCSS(Object-Oriented CSS)의 예입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I think CSS needs to be written structurally according to the structure of HTML.&nbsp;
+            Think of the template(HTML) as a single object, and create the CSS as the object is expressed as it is.&nbsp;
+            Less can help it do this.&nbsp;
+            The following is an example of OOCSS(Object-Oriented CSS) in the context_menu component.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="image" style="width: 200px;">
+            <img style="width: 200px;" src="images/context_menu.png">
+            <div ng-show="lang_menu.lang == 'korean'">
+              컨텍스트 메뉴
+            </div>
+            <div ng-show="lang_menu.lang == 'english'">
+              context menu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote">
+            <i class="fa fa-folder-open-o"></i> footer<br>
+            &nbsp;&nbsp;- footer.html<br>
+            &nbsp;&nbsp;- footer.js<br>
+            &nbsp;&nbsp;- footer.less
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              HTML
+            </div>
+            <div>
+              <pre>
+&lt;div class="context_menu" ng-click="jdfellaf()" ng-style="{ 'top': y, 'left': x }" ng-class="{ active: active == true }"&gt;
+  &lt;div&gt;
+    { battletag }
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div ng-repeat="item in items" ng-click="execute(item)"&gt;
+      { item }
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              Less
+            </div>
+            <div>
+              <pre>
+@context_menu_background_color: #2B3753;
+
+.context_menu {
+  z-index: 1;
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  visibility: hidden;
+  box-shadow: 5px 5px 5px #888888;
+  background-color: @context_menu_background_color;
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lighten(@context_menu_background_color, 10%);
+
+  & > div:nth-of-type(1) {
+    color: #3996D4;
+    text-align: center;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: koverwatch;
+  }
+
+  & > div:nth-of-type(2) {
+    margin-top: 10px;
+
+    & > div {
+      color: #EFEFEF;
+      cursor: pointer;
+      border-radius: 5px;
+      padding-top: 2px;
+      padding-right: 10px;
+      padding-bottom: 2px;
+      padding-left: 10px;
+      font-size: 16px;
+      font-family: koverwatch;
+
+      &:hover {
+        color: white;
+        background-color: #3996D4;
+      }
+    }
+  }
+
+  &.active {
+    visibility: visible;
+  }
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 2">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            레스트 API
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            RESTful API
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 3">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            웹팩
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Webpack
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            웹팩은 앵귤러의 모든 컴포넌트를 하나의 파일로 묶어 번들화시킵니다.&nbsp;
+            다음은 웹팩의 설정 파일인 webpack.config.js의 내용입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The Webpack bundles all the components of an Angular file into a single file.&nbsp;
+            Here is the contents of the Webpack configuration file webpack.config.js.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+var webpack = require('webpack');
+
+module.exports = {
+  context: __dirname,
+  entry: {
+    index_components: './components/index_components.js'
+  },
+  output: {
+    path: 'components/bundles',
+    filename: '[name]_bundle.js'
+  },
+  module : {
+    loaders : [
+      {
+        test : /\.less$/,
+        loader : 'style!css!less'
+      },
+      {
+        test : /\.html$/,
+        loader : 'raw!html-minify'
+      }
+    ]
+  }
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            index_components.js 파일을 엔트리로 하고 로더는 Less 로더와 HTML 로더를 사용합니다.&nbsp;
+            다음은 index_components.js 파일의 예입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            With the index_components.js file as an entry, the Webpack uses the Less loader and the HTML loader.&nbsp;
+            Here is an example of the index_components.js file.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+require('./init/init');
+require('./lang_menu/lang_menu');
+require('./left_menu/left_menu');
+require('./title_bar/title_bar');
+require('./james_kang/james_kang');
+require('./left_menu_icon/left_menu_icon');
+require('./philosophy_naming/philosophy_naming');
+
+require('./ui/code/code.less');
+require('./ui/grid/grid.less');
+require('./ui/init/init.less');
+require('./ui/image/image.less');
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            init, lang_menu, left_menu, title_bar 등은 모두 컴포넌트의 자바스크립트 파일이니다.&nbsp;
+            다음은 title_bar.js의 내용입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            init, lang_menu, left_menu, title_bar are all the component's JavaScript files.&nbsp;
+            Here is the contents of title_bar.js.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+require('./title_bar.less');
+var template = require('./title_bar.html');
+
+angular.module('title_bar', [])
+.component('titleBar', {
+  template: template,
+  controller: function(init, $scope) {
+    $scope.init = init;
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            require('./title_bar.less');로 컴포넌트의 Less 파일을 컴파일하고 로드합니다.&nbsp;
+            var template = require('./title_bar.html');로 컴포넌트의 템플릿을 스트링으로 로드해서 컴포넌트의 템플릿에 등록합니다.&nbsp;
+            웹팩은 각 컴포넌트에 대해서 동일한 작업을 수행한 후 모든 컴포넌트를 번들화하여 하나의 번들 파일로 생성합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Compile and load the component's Less file with require ('./ title_bar.less');&nbsp;
+            var template = require ('./ title_bar.html'); loads the component's template as a string and registers it in the component's template.&nbsp;
+            The Webpack performs the same operation for each component, and then bundles all the components into a single bundle file.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 4">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            걸프
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Gulp
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            걸프는 웹팩이 생성한 번들 파일과 자바스크립트 라이브러리 파일을 묶어 하나의 파일로 만듭니다.&nbsp;
+            그리고 CSS 라이브러리도 묶어 하나의 파일로 만듭니다.&nbsp;
+            다음은 걸프의 설정 파일인 gulpfile.js의 내용입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The Gulf bundles the bundle file created by the Webpack and the JavaScript library file into a single file.&nbsp;
+            It also bundles the CSS library into a single file.&nbsp;
+            Here is the contents of the gulf configuration file, gulpfile.js.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+var gulp = require('gulp');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var clean_css = require('gulp-clean-css');
+
+gulp.task('index_css', function () {
+	return gulp.src([
+		'node_modules/normalize.css/normalize.css',
+
+		'libraries/font-awesome-4.7.0/css/font-awesome.min.css',
+
+		'fonts/fonts.css'
+  ])
+	.pipe(concat('css.min.css'))
+  .pipe(clean_css())
+	.pipe(gulp.dest('distribution/index/css'));
+});
+
+gulp.task('index_js', function () {
+	return gulp.src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/angular/angular.min.js',
+
+		'node_modules/angular-route/angular-route.min.js',
+		'node_modules/angular-animate/angular-animate.min.js',
+
+    'components/bundles/index_components_bundle.js'
+  ])
+	.pipe(concat('javascript.min.js'))
+  .pipe(uglify({
+		mangle: false
+	}))
+	.pipe(gulp.dest('distribution/index/javascripts'));
+});
+
+gulp.task('watch', function () {
+	gulp.watch('components/bundles/index_components_bundle.js', ['index_js']);
+});
+
+gulp.task('default', [
+	'index_css',
+	'index_js',
+	'watch'
+]);
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            걸프를 통해서 최종적으로 생성된 css.min.css와 javascript.min.js는 index.html에 로드되어 사용됩니다.&nbsp;
+            다음은 index.html의 내용의 일부입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The final generated css.min.css and javascript.min.js through the Gulf are loaded and used in index.html.&nbsp;
+            The following are some of the contents of index.html.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              HTML
+            </div>
+            <div>
+              <pre>
+&lt;html lang="kr"&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="distribution/index/css/css.min.css?v=nm4mh1yt"&gt;
+  &lt;/head&gt;
+  &lt;body ng-app="james_kang"&gt;
+    &lt;james-kang&gt;&lt;/james-kang&gt;
+
+    &lt;script src="distribution/index/javascripts/javascript.min.js?v=nm4mh1yt"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>

@@ -1,0 +1,24 @@
+.lang_menu {
+  overflow: hidden;
+
+  & > div {
+    float: left;
+    color: #AAAAAA;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: JejuGothic;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #F5F5F5;
+
+    &:nth-of-type(1) {
+      border-left-width: 0px;
+    }
+
+    &.active {
+      color: #F5F5F5;
+    }
+  }
+}

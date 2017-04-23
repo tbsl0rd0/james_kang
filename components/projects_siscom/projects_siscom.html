@@ -1,0 +1,81 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        프로젝트 - siscom
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Projects - siscom
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        개요
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Summary
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'korean'">
+        반도체 소자
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'english'">
+        Semiconductor device
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'korean'">
+        논리 회로
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 2" ng-class="{ 'red': location == 2 }" ng-show="lang_menu.lang == 'english'">
+        Logic circuit
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'korean'">
+        컴퓨터 시스템 구조
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 3" ng-class="{ 'red': location == 3 }" ng-show="lang_menu.lang == 'english'">
+        Computer system architecture
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'korean'">
+        운영 체제 제작
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 4" ng-class="{ 'red': location == 4 }" ng-show="lang_menu.lang == 'english'">
+        making OS
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'korean'">
+        리버스 엔지니어링
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 5" ng-class="{ 'red': location == 5 }" ng-show="lang_menu.lang == 'english'">
+        Reverse engineering
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            개요
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Summary
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            컴퓨터 시스템을 전반적으로 이해하기 위한 스터디 프로젝트입니다.&nbsp;
+            소프트웨어 뿐만 아니라 하드웨어에 대한 이해도 어느정도는 필요하다고 생각합니다.&nbsp;
+            그러나 하드웨어에 대한 지식은 깊게 이해하는 것은 제약이 많기 때문에 기초적인 하드웨어 지식만을 공부한다.<br>
+            <br>
+            siscom은 컴퓨터를 분석한다는 의미에서 analysis와 computer의 합성어로 지어진 이름이다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>

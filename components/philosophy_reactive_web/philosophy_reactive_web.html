@@ -1,0 +1,242 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        철학 - 반응형 웹
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Philosophy - Reactive web
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        반응 기준
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Response criterion
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'korean'">
+        그리드 시스템
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'english'">
+        Grid system
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            반응 기준
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Response criterion
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            대부분의 반응형 웹은 브라우저의 너비를 기준으로 반응합니다.&nbsp;
+            그러나 반응형 웹은 본질적으로 PC, 태블릿, 모바일에서 보여지는 화면구성을 달리 하기 위해 필요한 것입니다.&nbsp;
+            이것을 생각했을 때 브라우저의 너비를 기준으로 반응하는 것은 불합리해 보입니다.&nbsp;
+            PC에서 브라우저 창의 너비를 줄이면 모바일에서 보여지는 화면구성이 보여지기 때문입니다.<br>
+            <br>
+            따라서 반응 기준을 브라우저의 너비에 두기 보다는 다음과 같이 해당 기기의 스크린 너비에 그 기준을 둡니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Most responsive web responds based on the browser's width.&nbsp;
+            However, a responsive web is essentially needed to differentiate a screen composition seen on PCs, tablets, mobiles.&nbsp;
+            Thinking about this, it seems unreasonable to react based on a width of a browser.&nbsp;
+            If an user reduces the width of the browser on the user's PC, the user will see a screen composition shown on a mobile.<br>
+            <br>
+            So instead of putting the reaction criteria in the width of the browser, it should set it to a screen width of a device as follows.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              JS
+            </div>
+            <div>
+              <pre>
+if (screen.width < 992) {
+  init.is_small = true;
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              HTML
+            </div>
+            <div>
+              <pre>
+&lt;div class="column_8 column_10_in_small" ng-class="{ 'small': init.is_small == true }"&gt;
+  ...
+&lt;/div&gt;
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 1">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            그리드 시스템
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Grid system
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            그리드 시스템은 반응형 웹을 위해서도 쓰지만 웹 구조를 일관성 있게 작성하기 위해서도 사용합니다.&nbsp;
+            다음은 제가 제작하여 사용하는 그리드 시스템입니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            The grid system is also used for responsive web, but it is also used to create a consistent web structure.&nbsp;
+            The following is a grid system that I create and use.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="code">
+            <div>
+              Less
+            </div>
+            <div>
+              <pre>
+.container {
+  width: 850px;
+  margin: auto;
+
+  &.small {
+    width: 100%;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.column(@column) {
+  vertical-align: top;
+  display: inline-block;
+  width: 8.333333333% * @column;
+}
+
+.column_0 {
+  .column(0);
+}
+
+.column_1 {
+  .column(1);
+}
+
+.column_2 {
+  .column(2);
+}
+
+...
+
+.column_0_in_small.small {
+  .column(0);
+}
+
+.column_1_in_small.small {
+  .column(1);
+}
+
+.column_2_in_small.small {
+  .column(2);
+}
+
+...
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            로우 클래스에 overflow: hidden을 주고 컬럼 클래스에 float: left를 주는 그리드 시스템도 있습니다.&nbsp;
+            하지만 overflow: hidden 때문에 box-shadow나 그 이외에 overflow되는 요소들이 표시되지 않는다는 단점이 있습니다.&nbsp;
+            그래서 컬럼 클래스에 display: inline-block을 주고 크로스 브라우징을 위해 vertical-align: top을 주는 그리드 시스템을 사용합니다.<br>
+            <br>
+            반응형 그리드 시스템을 위해 미디어 쿼리를 사용하지 않습니다.&nbsp;
+            PC에서 브라우저 너비를 줄이면 모바일에서 보여지는 화면 구성이 보여지는 것을 막기 위해서입니다.<br>
+            <br>
+            그리드 시스템은 웹 요소들을 구조적으로 쌓는 역할도 합니다.&nbsp;
+            컴포넌트는 다음과 같이 종류를 나눕니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Some grid systems give 'overflow: hidden' to the 'row' class and 'float: left' to the 'column_x' class.&nbsp;
+            However, overflow: hidden has the disadvantage of not displaying 'box-shadow' or other overflow elements.&nbsp;
+            So I use a grid system that gives 'display: inline-block' to the 'column_x' class and 'vertical-align: top' for cross-browsing.<br>
+            <br>
+            I do not use media queries for reactive grid systems.&nbsp;
+            It is for preventing the screen composition shown on a mobile from being shown if an user reduces the width of the browser on the PC.<br>
+            <br>
+            The grid system is also responsible for structuring web elements.&nbsp;
+            The components is divided by following types.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            - 컴포넌트 내에 그리드 시스템이 쓰이지 않는 순수 컴포넌트<br>
+            - 컴포넌트 내에 그리드 시스템이 사용되는 복합 컴포넌트
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            - Pure components that do not use the grid system within the component<br>
+            - Composite component where the grid system is used within the component
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            순수 컴포넌트 내에 웹 요소 배치는 주로 마진으로 하지만 웹 요소가 텍스트인 경우는 패딩으로 합니다.&nbsp;
+            폰트오우썸의 i 태그나 span 태그가 충분히 택스트로 보여질 만하면 텍스트로 취급합니다.<br>
+            <br>
+            복합 컴포넌트 내에 웹 요소 배치는 그리드 시스템으로 합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            Placing web elements within a pure component primarily uses margin property, but if the web element is text, it uses padding property.&nbsp;
+            Fontawesome's i and span tags are treated as text if they are shown as text.<br>
+            <br>
+            Placement of web elements within a composite component is done by the grid system.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: JejuGothic;
+  src: url("fonts/JejuGothic/JejuGothic.eot");
+  src: url("fonts/JejuGothic/JejuGothic.ttf");
+  src: url("fonts/JejuGothic/JejuGothic.woff");
+}
+
+@font-face {
+  font-family: NanumGothic;
+  src: url("fonts/NanumGothic/NanumGothic.eot");
+  src: url("fonts/NanumGothic/NanumGothic.ttf");
+  src: url("fonts/NanumGothic/NanumGothic.woff");
+}

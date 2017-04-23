@@ -1,0 +1,43 @@
+@red: #E74C3C;
+@default: #F5F5F5;
+
+.button {
+  height: 30px;
+  color: #BBBBBB;
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 13px;
+  padding-left: 13px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+  font-family: JejuGothic;
+  background-color: @default;
+  border-color: darken(@default, 10%);
+
+  &:hover {
+    background-color: darken(@default, 10%);
+  }
+
+  &:active {
+    background-color: darken(@default, 20%);
+  }
+
+  &.red {
+    color: #F5F5F5;
+    background-color: @red;
+    border-color: darken(@red, 10%);
+
+    &:hover {
+      background-color: darken(@red, 10%);
+    }
+
+    &:active {
+      background-color: darken(@red, 20%);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,30 @@
+<div>
+  <init></init>
+  <title-bar ng-click="left_menu.inactivate_left_menu()"></title-bar>
+  <div class="container" ng-click="left_menu.inactivate_left_menu()" ng-class="{ 'small': init.is_small == true }">
+    <div class="row" style="height: 50px;" ng-show="init.is_small == false"></div>
+    <div class="row" style="height: 10px;" ng-show="init.is_small == true"></div>
+    <div class="row" ng-show="init.is_small == true">
+      <div class="column_0" style="width: 10px;"></div>
+      <div class="column_11">
+        <left-menu-icon></left-menu-icon>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column_12">
+        <lang-menu style="float: right;"></lang-menu>
+      </div>
+    </div>
+    <div class="row" style="height: 50px;"></div>
+    <div class="row">
+      <div class="column_3 column_0_in_small" ng-class="{ 'small': init.is_small == true }">
+        <left-menu></left-menu>
+      </div>
+      <div class="column_1"></div>
+      <div class="column_8 column_10_in_small" ng-class="{ 'small': init.is_small == true }">
+        <ng-view></ng-view>
+      </div>
+      <div class="column_1" ng-show="init.is_small == true"></div>
+    </div>
+  </div>
+</div>

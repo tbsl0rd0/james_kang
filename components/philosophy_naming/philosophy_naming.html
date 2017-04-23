@@ -1,0 +1,140 @@
+<div>
+  <div class="row">
+    <div class="column_12">
+      <div class="header_1" ng-show="lang_menu.lang == 'korean'">
+        철학 - 네이밍
+      </div>
+      <div class="header_1" ng-show="lang_menu.lang == 'english'">
+        Philosophy - Naming
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 10px;"></div>
+  <div class="row">
+    <div class="column_12">
+      <button class="button" style="float: left; margin-top: 5px;" ng-init="location = 0" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'korean'">
+        표기법
+      </button>
+      <button class="button" style="float: left; margin-top: 5px;" ng-click="location = 0" ng-class="{ 'red': location == 0 }" ng-show="lang_menu.lang == 'english'">
+        Notation
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'korean'">
+        약어
+      </button>
+      <button class="button" style="float: left; margin-top: 5px; margin-left: 5px;" ng-click="location = 1" ng-class="{ 'red': location == 1 }" ng-show="lang_menu.lang == 'english'">
+        Abbreviation
+      </button>
+    </div>
+  </div>
+  <div class="row" style="height: 30px;"></div>
+  <div class="row">
+    <div class="column_12" ng-show="location == 0">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            표기법
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Notation
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            표기법은 언더바 표기법을 사용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I use underbar notation.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            카멜 표기법 : appleTree<br>
+            하이픈 표기법 : apple-tree<br>
+            언더바 표기법 : apple_tree
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            Camel notation : appleTree<br>
+            Hyphen notation : apple-tree<br>
+            Underbar notation : apple_tree
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            카멜 표기법은 타이핑하기도 어렵고 막상 적어놓고 보면 한눈에 단어를 알아보기가 쉽지 않습니다.&nbsp;
+            또한, 하이픈 표기법은 자바스크립트에서 허용하지 않고 더블클릭했을 때 한번에 선택되지 않습니다.&nbsp;
+            언더바 표기법은 타이핑하기도 쉽고 가독성도 좋으며 더블클릭했을 때 한번에 선택되므로 코딩속도가 향상됩니다.<br>
+            <br>
+            그러나 다음과 같이 언더바 표기법이 허용되지 않는 경우에는 카멜 표기법이나 하이픈 표기법을 사용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            It is not easy to type in camel notation and to know that at a glance.&nbsp;
+            Hyphen notation is not allowed in JavaScript and when double clicked, it is not blocked as a word.&nbsp;
+            But, as well as underbar notation is easy to type, it is blocked at once, so it is possible to speed up the coding.<br>
+            <br>
+            Yet, when it is not allowed as follows, there is no choice to use the other two.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote" ng-show="lang_menu.lang == 'korean'">
+            HTML 사용자 정의 태그 이름 : 하이픈 표기법<br>
+            앵귤러 컴포넌트 이름 : 카멜 표기법<br>
+            도메인 네임 : 하이픈 표기법
+          </div>
+          <div class="blockquote" ng-show="lang_menu.lang == 'english'">
+            HTML custom tag name : hyphen notation<br>
+            Angular component name : camel notation<br>
+            Domain name : hyphen notation
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column_12" ng-show="location == 1">
+      <div class="row">
+        <div class="column_12">
+          <div class="header_2" ng-show="lang_menu.lang == 'korean'">
+            약어
+          </div>
+          <div class="header_2" ng-show="lang_menu.lang == 'english'">
+            Abbreviation
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="paragraph" ng-show="lang_menu.lang == 'korean'">
+            코딩할 때 자주 등장하고 풀네임으로 타이핑하기 번거로운 7글자 이상의 다음과 같은 단어에 대해서 약어를 사용합니다.
+          </div>
+          <div class="paragraph" ng-show="lang_menu.lang == 'english'">
+            I use the abbreviation for the following words that appear frequently when it comes to coding and the words that are hard to type as full name and seven characters or more.
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="column_12">
+          <div class="blockquote">
+            initialize&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp;init<br>
+            language&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp;lang<br>
+            request&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp;req<br>
+            response&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp;res<br>
+            document&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i>&nbsp;&nbsp;doc
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 200px;"></div>
+</div>
