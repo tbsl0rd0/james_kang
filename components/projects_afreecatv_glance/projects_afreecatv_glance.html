@@ -346,10 +346,10 @@ user_ids = re.findall('"user_id":"(.*?)"', match.group(1))
             </div>
             <div>
               <pre>
-<span style="color: #7B52AB;">for</span> (title_number, user_id) <span style="color: #7B52AB;">in</span> [(title_numbers[i], user_ids[i]) for i in range(0, len(title_numbers))]:
+<span style="color: #9768D1;">for</span> (title_number, user_id) <span style="color: #9768D1;">in</span> [(title_numbers[i], user_ids[i]) for i in range(0, len(title_numbers))]:
     last_number = '0'
 
-    <span style="color: #7B52AB;">while</span> 1:
+    <span style="color: #9768D1;">while</span> 1:
         request = urllib.request.Request('http://stbbs.afreecatv.com/api/bbs_memo_action.php?nTitleNo=' + title_number + '&bj_id=' + user_id + '&nPageNo=1&szAction=get&nVod=1&nLastNo=' + last_number)
         data = urllib.request.urlopen(request).read()
         data = data.decode('unicode_escape')
@@ -360,8 +360,8 @@ user_ids = re.findall('"user_id":"(.*?)"', match.group(1))
 
         match = re.search('"list_data":(\[.+\])},"TOTAL_CNT"', data)
 
-        <span style="color: #7B52AB;">if</span> match <span style="color: #7B52AB;">is</span> None:
-            <span style="color: #7B52AB;">break</span>
+        <span style="color: #9768D1;">if</span> match <span style="color: #9768D1;">is</span> None:
+            <span style="color: #9768D1;">break</span>
 
         comment_numbers = re.findall('"p_comment_no":"(.*?)"', match.group(1))
         user_ids_2 = re.findall('"user_id":"(.*?)"', match.group(1))
@@ -416,7 +416,7 @@ user_ids = re.findall('"user_id":"(.*?)"', match.group(1))
             </div>
             <div>
               <pre>
-<span style="color: #7B52AB;">for</span> (user_id_2, comment, registration_date) <span style="color: #7B52AB;">in</span> [(user_ids_2[i], comments[i], registration_dates[i]) for i in range(0, len(user_ids_2))]:
+<span style="color: #9768D1;">for</span> (user_id_2, comment, registration_date) <span style="color: #9768D1;">in</span> [(user_ids_2[i], comments[i], registration_dates[i]) for i in range(0, len(user_ids_2))]:
     registration_date = datetime(int(registration_date[0:4]), int(registration_date[5:7]), int(registration_date[8:10]), int(registration_date[11:13]), int(registration_date[14:16]))
 
     sha256 = hashlib.sha256()
@@ -425,8 +425,8 @@ user_ids = re.findall('"user_id":"(.*?)"', match.group(1))
 
     doc = collection.find_one({ 'hash_digest': hash_digest })
 
-    <span style="color: #7B52AB;">if</span> doc <span style="color: #7B52AB;">is not</span> None:
-        <span style="color: #7B52AB;">continue</span>
+    <span style="color: #9768D1;">if</span> doc <span style="color: #9768D1;">is not</span> None:
+        <span style="color: #9768D1;">continue</span>
 
     collection.insert_one({
         'title_number': title_number,
